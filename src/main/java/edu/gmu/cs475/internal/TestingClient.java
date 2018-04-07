@@ -15,7 +15,7 @@ public class TestingClient extends MembershipClient {
 	private int debug;
 
 	public TestingClient(String zkConnectString, NetCrusher proxyToZK, int debug) {
-		super(zkConnectString);
+		super(zkConnectString, debug);
 		this.debug = debug;
 		this.proxyToZK = proxyToZK;
 	}

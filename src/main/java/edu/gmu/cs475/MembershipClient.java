@@ -3,7 +3,9 @@ package edu.gmu.cs475;
 public class MembershipClient {
 
 
-	public MembershipClient(String zkConnectStr){
+	int debug;
+	public MembershipClient(String zkConnectStr, int debug){
+		this.debug = debug;
 
 	}
 	public void joinGroup(String groupName, String id) {
